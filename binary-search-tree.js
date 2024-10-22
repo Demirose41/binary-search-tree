@@ -43,11 +43,11 @@ class BinarySearchTree {
     while(currentNode != null){
       if(currentNode.val === val ) return true
       if(currentNode.val > val){
-        currentNode = currentNode.right
+        currentNode = currentNode.left
         continue
       } 
       if(currentNode.val < val){
-        currentNode = currentNode.left
+        currentNode = currentNode.right
         continue
       } 
     }
